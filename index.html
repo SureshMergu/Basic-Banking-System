@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Banking System</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet"/>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+
+  <style>
+    .navbar-brand{
+      font-family: 'Alkatra', cursive;
+    }
+
+    .lead_muted{
+      font-family: 'Libre Baskerville', serif;
+      color: #ff3b55;
+      font-size: 2rem;
+    }
+
+    .nav-link{
+      font-family: 'Alkatra', cursive;
+    }
+
+    ..nav-item{
+      font-family: 'Alkatra', cursive;
+    }
+    </style>
+  
+  <body onload="loader()">
+    <!-- loader for splash screen -->
+    <div id="loading"></div>
+
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">The Sparks Foundation Bank</a>
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home <span class="sr-only">color:"red</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./customers.php">Customers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- here content starts here -->
+    <br>
+    <br>
+
+    <div class="container-fluid hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1>In banking or finance,trust is the only thing you have to sell</h1>
+          <br>
+          <br>
+
+          <p class="lead_muted">WELCOME TO THE SPARKS FOUNDATION BANK</p>
+          <div class="textpara"><p>
+            <br> At 2030, I would say that you probably have two billion people that'll be using day-to-day banking services,independent of banks<BR/>
+            <br>This Basic Banking System helps to transfer money between users<br/>
+            </p>
+          </div>
+          <br />
+          <br />
+          <!--<a class="get-started" href="./customers.html">Transfer Money</a>-->
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="hero-img-div">
+            <img src="Bank-PNG-File.png" class="rounded mx-auto d-block hero-img" alt="Bank Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
+
+    <!-- footer starts here -->
+    <div class="footer" style="margin-top: 25px">
+      <div class="container" id="Foodie">
+        <h1 class="foothead">
+          <b>The Sparks Foundation Bank </b>
+        </h1>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              Banking has to work when and where you need it<br />
+              The best advice and the best service in financial services<br />
+              happens in real time and is based on ,<br />
+              customer behavior ,using principles of Big Data ,<br />
+              mobility and gamification.<br />
+            </p>
+          </div>
+
+            <!-- <a
+              href="file:///C:/Users/lenovo/Documents/Basic%20Bank%20Management%20System/aboutus.html"
+              class="btn btn-danger btn-lg"
+              >About Sparks Bank</a
+            > -->
+
+
+            <br />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader() {
+        preloader.style.display = "none";
+      }
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
